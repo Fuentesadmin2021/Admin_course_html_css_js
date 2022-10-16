@@ -1,0 +1,28 @@
+h1{
+    color: #f72585;
+}
+
+/*link no visitado*/
+a:link{
+    color: #b5179e;
+    /*sin decoración*/
+    text-decoration: none;
+}
+
+/*link visitado*/
+a:visited{
+    color: #7209b7;
+    text-decoration: none;
+}
+
+/*cuando nos ponemos sobre el link*/
+a:hover{
+    color: #560bad;
+    text-decoration: underline;
+}
+
+/*estado activo del link*/
+a:active{
+    color: #480ca8;
+    text-decoration: underline;
+}
