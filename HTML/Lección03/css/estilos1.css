@@ -8,6 +8,8 @@ a:link, a:visited{
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
+    /* propiedad para que cada caso tenga su bloque*/
+    display:inline-block;
 }
 
 a:hover, a:active{

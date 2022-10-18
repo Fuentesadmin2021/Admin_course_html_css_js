@@ -1,0 +1,44 @@
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    /* borde colapsado, si se quiere un borde mas ancho no se puede utilizar */
+    border-collapse: collapse;
+    /* no es muy común
+    border-spacing:  5px; */
+    padding: 5px;
+}
+
+caption {
+    color: #3b34ba;
+    font-family:'Trocchi';
+    font-size: 45px;
+    line-height: 70px;
+}
+
+th {
+    color:#f0f8ff;
+    background-color: #094880;   
+}
+
+/*reglones pares*/
+tr:nth-child(even){
+    background-color: #f1f8ff;
+}
+
+/*reglones impares*/
+tr:nth-child(odd){
+    background-color: #c8e1f9;
+}
+
+/* como cambiar la aliniación
+td{
+    text-align: center;
+}
+
+th{
+    text-align: left;
+}
+*/
