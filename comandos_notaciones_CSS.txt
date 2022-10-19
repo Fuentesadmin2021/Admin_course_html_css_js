@@ -1,3 +1,5 @@
+CSS :cacading Style Sheets 
+
 ol li::before{
 
 }           selector, para angregar algo antes de que se muestre el contenido de la etiqueta
@@ -15,5 +17,6 @@ atributos globales
 
 atributod unicos
 #"id"{}
+
 
 

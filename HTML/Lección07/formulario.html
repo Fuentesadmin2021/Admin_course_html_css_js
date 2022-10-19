@@ -8,11 +8,88 @@
 </head>
 <body>
     <h1>Formularios en HTML</h1>
-    <form>
-        <!--se relacciona el label con el id de la caja de texto para que se seleccione si damos click sobre la etiqueta-->
-        <label for = "nombre">Nombre:</label>       
-        <input type="text"; id="nombre"/>          
-        <input type="submit"; value="Enviar"/>
+    <!--
+    con el method="GET" la información del formulario se muestra en la url
+    con el method="POST" la información del formulario se envia en el cuerpo del mensaje http
+    el atributo action="url" la página indicada en action es la que se encarga de procesar la información
+    el atributo target="_self" se usa para que por defecto la respuesta se visualize dentro de la misma ventana en la que estamos trabajando si
+    utilizamos target="_blanck" la respuesta se carga en una nueva ventana
+    el atributo autocomplete="off" se utiliza para que el formulario no se autocomplete
+-->
+    <form method="GET" action="mi_servidor" target="_self" autocomplete="on">
+        <fieldset>
+            <legend>Datos persona</legend>
+            <!--id persona es un valor que el usuario no puede modificar-->
+            <label for="id_persona">Id persona:</label><br/>    
+            <!--si se usa el parametro disabled="true" este campo no se envia al servidor-->
+            <input type="text" id="id_persona" name="id_persona" readonly="true" disabled="true" value="100"/><br/>      
+        
+            <!--
+            este input es un valor oculto, el usuario no lo visualizara
+            SAP = sistema de administración de personas
+            -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+
+
+            <!--se relacciona el label con el id de la caja de texto para que se seleccione si damos click sobre la etiqueta-->
+            <label for="nombre">Nombre:</label><br/>    
+            <!--el atributo name se usa para que los datos de nuestros formularios se muestren el la url-->   
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/><br/>      
+            
+            <label for="apellido">Apellido:</label><br/>      
+            <!--el atributo placeholder sirve para que se muestre un texto de fondo-->
+            <!--el atributo required se usa para que un campo del formulario sea requerido-->
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"/><br/>      
+            
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password" required="true"/><br/>      
+            
+            <label for="email">Eamil</label><br/> 
+            <input type="email" id="email" name="email" required="false"/></br>
+
+            <label for="edad">Edad:</label><br/> 
+            <!--el atributo step="any" se usa para que acepte valores decimales-->
+            <input  type="number" id="edad" name="edad" required="false"/></br>
+
+            <!--
+            radio buttons
+            para que se selecione una unica opción todos los radio buttons deben tener el mismo nombre
+            -->
+            <label for="genero">G&eacute;nero</label></br>
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label type="femenino">Femenino</label></br>
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            <label type="masculino">Masculino</label></br>
+
+            <label>M&uacute;sica favorita</label></br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+            <label for="clasica">Cl&aacute;sica</label></br>
+
+            <input type="checkbox" id="jazz" name="musica" value="jazz"/>
+            <label for="jazz">Jazz</label></br>
+            
+            <input type="checkbox" id="pop" name="musica" value="pop"/>
+            <label for="pop">Pop</label></br>
+
+            <!--elementos de tipo select-->
+            <label  for="autos">Marca de auto favorita:</label></br>
+            <!--el atributo multiple="true" se utiliza para que se puedan seleccionar varias opciones-->
+            <select id="autos" name="autos" multiple="true">
+                <!--el atributo selected="true" se utiliza para que se seleccionar un valor por defecto-->
+                <option value="BMW" selected="true">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mazda">Mazda</option>
+            </select></br>
+
+            <label for="comentario">Comentario:</label></br>
+            <textarea id="comentario" name="comentario" rows="2" cols="30">Este es mi comentario
+            </textarea></br>
+
+            <input type="submit" value="Enviar"/>     
+            <!--enviar sin validar-->
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"/> 
+            <input type="reset" value="Restablecerar"/>
+        </fieldset>
     </form>
 </body>
 </html>
