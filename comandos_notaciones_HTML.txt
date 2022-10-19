@@ -1,0 +1,45 @@
+<hr/> : horizontal line
+<br/> : new line
+
+<link rel="stylesheet" href="">  etiqueta para agregar los estilos css
+
+Model box en css [margin[border[padding[content](Top, Right, Bottom, Left)]]]
+
+^_^ Tablas
+
+<table></table> : declarar una tabla
+<caption></caption> : table title
+<tr></tr> : table row 
+<th></th> : table head    colspan="2" este atrivuto se usa si queremos unir varias columnas en una sola
+<td></td> : table data    rowspan="2" este atrivuto se usa si queremos unir varias filas en una sola
+
+^_^ Listas
+
+<ol></ol> listas ordenadas 
+<ul></ul> listas no ordenadas
+<dl></dl> lista de definición
+
+<li></li> list item
+
+
+^_^ Elementos inline y block 
+
+<span></span> elementos en linea
+<div class="container"></div> elementos en bloque       atributo class
+<h1 id ="container"></h1>  atributo, id unico
+
+
+^_^ Concepto de bookmark
+
+<h1 id ="Maria"></h1>           esto nos sirve para que una referencia nos lleva a un lugar especifico de nuestra página
+<a href="#Maria">Maria</a>
+
+^_^ iframe 
+
+<iframe href="referencia"></iframe>     en el iframe se puede cargar información de otra página hasta una página completa
+
+^_^ formularios 
+
+<form></form>       etiqueta para crear un formulario en html
+<label></label>     etiqueta para mostrar texto
+<input typr="type" id="name"/>

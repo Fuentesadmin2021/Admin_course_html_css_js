@@ -1,0 +1,19 @@
+ol li::before{
+
+}           selector, para angregar algo antes de que se muestre el contenido de la etiqueta
+
+ol li::after{
+
+}           selector, para angregar algo despues de que se muestre el contenido de la etiqueta
+
+
+clase css
+."name class"{}
+
+atributos globales
+*{} 
+
+atributod unicos
+#"id"{}
+
+
