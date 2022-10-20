@@ -1,0 +1,27 @@
+/*h1{
+    color: #d34b9c !important;
+    color: #d34b9c;
+}
+*/
+
+/* atributos universales*/
+
+*{
+    background-color:#ececfc;
+    color: cornflowerblue;
+}
+
+/*#id style*/
+#titulo{
+    color: #d34b9c;
+    text-align: center;
+}
+
+/* aplicar class aa elementos especificos*/
+p.centrar{
+    text-align: center;
+}
+
+.texto_grande{
+    font-size: 20px;
+}

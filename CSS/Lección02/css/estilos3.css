@@ -1,0 +1,26 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+.punteado{
+    border-style: dotted;
+}
+
+.discontinuo{
+    border-style: dashed;
+}
+
+.solido{
+    border:  10px solid blue;
+}
+
+.doble{
+    border: 5px double;
+}
+
+.surco{
+    /*border: 10px groove;*/
+    border-width: 10px;
+    border-style: groove;
+}

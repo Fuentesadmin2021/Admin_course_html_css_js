@@ -1,22 +1,41 @@
 CSS :cacading Style Sheets 
 
-ol li::before{
+^_^ types of CSS
 
-}           selector, para angregar algo antes de que se muestre el contenido de la etiqueta
+inline CSS     style dentro de cada elemento del body de nuestra pagina
+internal CSS   etiqueta <style></style> definida en el head
+External CSS   hojas de estilos
 
-ol li::after{
+si queremos que se domine la aplicación de una propiedad de una hoja de estilo
+se pone la palabra !important seguido del atributo
 
-}           selector, para angregar algo despues de que se muestre el contenido de la etiqueta
+ol li::before{}   selector, para angregar algo antes de que se muestre el contenido de la etiqueta
 
+ol li::after{}    selector, para angregar algo despues de que se muestre el contenido de la etiqueta
 
-clase css
-."name class"{}
 
 atributos globales
 *{} 
 
-atributod unicos
+atributos unicos con identificador
 #"id"{}
 
+clase css, atributos para aplicar a multiples elementos
+."name class"{}
+
+agrupamiento de estilos a Elementos
+elemento 1, elemento 2{styles}
+
+si queremos aplicar una clase a un tipo especifico de elemento
+element.(name class){styles}
 
 
+^_^ formas de declarar los colores (colores y bordes)
+border: solid
+border: dashed (linea discontinua)
+border: dotted (linea punteada)
+border: double (borde doble)
+border: groove (borde con surco)
+
+hsl = hue(color) saturation(saturación) lightness(iluminción)
+rgb = (red green blue) (0-255)
