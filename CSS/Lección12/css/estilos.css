@@ -1,0 +1,35 @@
+/*Ajustes para que el gradiente se adapte a toda nuestra pantalla*/
+html{
+    height: auto;
+    min-height: 100%;
+
+}
+
+body{
+    /* background: linear-gradient(#f72585, #3a0ca3); */
+    /* background: linear-gradient(to right, #f72585, #3a0ca3 ); */
+    /* background: linear-gradient(#fdf5fc,#f72585, #3a0ca3); */
+    /* background: linear-gradient(to bottom right, #e395d9,#f72585) */
+    /* background: linear-gradient(145deg, #e395d9, #f72585) */
+    background:radial-gradient(circle,#c3dafd, #1a01db );
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    padding: 15px;
+    border: 3px solid #f7f7fb; 
+    text-align: center;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

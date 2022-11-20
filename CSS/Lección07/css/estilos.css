@@ -1,0 +1,83 @@
+/*version 2
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap');
+*/
+/*version 1*/
+@import url('https://fonts.googleapis.com/css?family=Sofia&effect=shadow-multiple&display=swap');
+
+h1{
+    color: #0b4ad3;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #b5b5e5; 
+    font-family: 'Sofia', cursiva;
+}
+
+.caja{ 
+    padding: 5px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    float: left;
+}
+
+.caja.serif{
+    background-color: #7979f0;
+}
+
+.caja.sans_serif{
+    background-color: #eee984;
+}
+
+.caja.monospace{
+    background-color:#800066;
+}
+
+.caja.cursiva{
+    background-color:#eb3b3b;
+}
+
+.fuente_times{
+    font-family: 'Times New Roman', Times, serif;
+    /*estilos de fuente*/
+    font-style: normal;
+    font-weight: normal;
+    /*todas las palabras en mayuscula pero con la primera letra mas grande*/
+    font-variant: small-caps;
+    /*valor por default 16px;'*/
+    font-size: small;
+    /*atributos en una unica linea*/
+    /*font: font-style font-variant font-weight *font-size/line-height *font-family;
+    font: italic small-caps bolder 20px 'Times New Roman' sans-serif;*/
+
+}
+
+.fuente_georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: normal;
+    /* 1em eqivale a 16 px*/
+    font-size: 1em;
+}
+
+.fuente_arial{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    /*view width (viewport) view height (viewport)*/
+    font-size: 3vw;
+}
+.fuente_verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.fuente_courier{
+    font-family: 'Courier New', courier, monospace;
+}
+.fuente_lucida{
+    font-family:'Lucida Handwriting', cursive;
+}

@@ -1,0 +1,15 @@
+h1{
+    text-align:center;
+    height: 1000px;
+}
+body{
+    background-color: rgb(33, 14, 8);
+    color: rgb(19, 13, 22);
+    background-image: url("../imagenes/Lindsey.jpg");
+    /*elegir si queremos que una imagen se repita*/
+    background-repeat:repeat;
+    /*elegir la posición de la imagen de fondo*/
+    background-position: right top;
+    /*propiedad por defecto, se puede elegir otras opciones
+    background-attachment: scroll;*/
+}

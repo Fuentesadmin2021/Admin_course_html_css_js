@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    color: #8d8dff;
+}
+
+div.contenedor{
+    position: relative;
+    border:3px solid #b2b2cc;
+    width: 30%;
+    height: 300;
+    margin: auto;
+}
+
+img.img_balet{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+div.centro{
+    position: absolute;
+    top: 50%;
+    /*border: 1px solid blue;*/
+    width: 100%;
+}
+
+div.centro p{
+    text-align: center;
+    font-family:"Times New Roman", Times, serif;
+    color: white;
+    font-size: 50px;
+}
+
+div.contenedor_overflow{
+    border: 3px solid blue;
+    width: 30%;
+    height: 100px;
+    margin: auto;
+    /*propiedad por default
+    overflow: visible;*/
+    /*esta propiedad oculta el contenido que se sale de nuestro contenedor
+    overflow: hidden;*/
+    /*overflow: scroll;*/
+    /*scroll se muestra en caso de que sea necesario, funciona si se expecifica un alto*/
+    overflow: auto;
+    /*tambien existe overflow-y, overflow-x con las mismas opcines de overflow*/
+}
+
+div.contenedor_float{
+    border: 3px solid blue;
+    width: 30%;
+    height: 100px;
+    overflow: auto;
+}
+
+div.contenedor_float.flotado{
+    float: left;
+}
+
+div.contenedor_float.flotado.contenedor1{
+    border: 3px solid blueviolet;
+}
+
+div.contenedor_float.flotado.contenedor2{
+    border: 3px solid #e22bc0;
+    float: right; 
+}
+
+div.contenedor_float.sin_flotar{
+    /*esta propiedad quita la propiedad de float de los elementos*/
+    clear: both;
+    border: 3px solid cornflowerblue;
+    margin: auto; 
+}

@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #dd5925;
+    color: red; 
+}
+
+
+div.contenedor{
+    display: flex;
+    background-color: #f5157a;
+    /* Orientación y orden de los elementos*/
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* Hacer que los elementos se ajusten al tamaño de la pantalla y el contenedor*/
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* Posición de los elementos(space-between, space-around...*/
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+div.contenedor > p{
+    background-color: #ffaad1;
+    color: #f1fafe;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+
+}

@@ -1,0 +1,35 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+
+h1{
+    text-align: center;
+    color: rgb(14, 14, 140);
+}
+
+/*Box model*/
+div{
+    /*el padding se puede aplicar a cada extremo, por parejas o general*/
+    padding: 10px 5px;
+    border: 15px solid #b93eb9;
+    /*auto nos centra el elemento;*/
+    margin: 20px auto;
+    text-align: center;
+    /*color caja de contenido*/
+    background-color: rgba(225, 154, 249, 0.536);
+    /*width: ancho*/
+    /*max-width: 100% con esto podemos definir que el tamaño maximo es de 100%;
+    en caso de que sea mas pequeña se redimenciona para ajustarse*/
+    max-width: 100px;
+    max-height: 100px;
+    outline: 10px solid #630187;
+    /*separación entre border y outset*/
+    /*outline-offset: 10px;*/
+    box-sizing: border-box;
+}
+
+p.interno{
+    margin: inherit;
+}
+

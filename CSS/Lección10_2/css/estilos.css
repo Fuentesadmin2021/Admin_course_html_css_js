@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: #ff0088;
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border:3px solid #ff00aa;
+}
+
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    background-color: #e1cefe90;
+    border: 1px solid #ff6aff;
+    height: 50px;
+    padding: 5px;
+    /*esta propiedad se puede utilizar para modificar las propiedades de ancho y alto de los elementos inline*/
+    display: inline-block;
+}
+
+
+.menu{
+    list-style: none;
+    text-align: center;
+
+}
+
+.menu li{
+    display: inline-block;
+    border-radius: 15px 0px 15px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #fa80d1;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fffdff;
+}

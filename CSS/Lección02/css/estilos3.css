@@ -4,23 +4,67 @@ h1{
 }
 
 .punteado{
+    /*estilo de borde*/
     border-style: dotted;
+    /*ancho del borde*/
+    border-width: 10px 5px 3px 2px;
+    /*podemos aplicar un color distinto para cada extremo del borde*/
+    border-color: hotpink blue red orange;
 }
+
 
 .discontinuo{
     border-style: dashed;
+    /*borde pequeño*/
+    border-width: medium; /*thin, thick*/
+    border-color:rgba(69, 123, 157, 0.505);
 }
 
 .solido{
-    border:  10px solid blue;
+    border: solid blue;
+    /*borde de distintos tamaños*/
+    border-width: 5px;
+    /*igual que con los tamaños y colores se pueden aplicar individualmente*/
+    border-radius: 20px;
 }
 
 .doble{
-    border: 5px double;
+    border: double blueviolet;
+    /*1valor: top, bottom. 2valor: left, right*/
+    border-width: 10px 5px;
 }
 
 .surco{
     /*border: 10px groove;*/
     border-width: 10px;
     border-style: groove;
+}
+
+.cresta{
+    border: 10px ridge;
+}
+
+.recuadro{
+    border:inset blueviolet;
+}
+
+.outset{
+    border: 10px outset;
+}
+
+.sin_borde{
+    border:none;
+}
+
+.oculto{
+    border: hidden;
+}
+
+.mixto{
+    border-style:dotted solid dashed double;
+}
+
+.redondeado{
+    /*redondeo de cada uno de los extremos del border*/
+    border-radius: 20px 0px 20px 0px;
 }

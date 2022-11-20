@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+    color: #1493dc;
+}
+
+div.centrar_div{
+    /*top, right, left and botto no funcionan con position:static;*/
+    position: static;
+    width: 50%;
+    border: 3px solid #2268b2;
+    /*centrar un elemento*/
+    margin: auto;
+}
+
+/*la posición incial del elemento div relative se reserva*/
+div.relative{
+    position: relative;
+    top: -10px;
+    left: 50px;
+    height: 100px;
+    width: 50%;
+    padding: 10px;
+    border: 3px solid #2268b2;
+    margin: auto;
+    background-color: #e4e4ff;
+    /*propiedad para posicionar un elemento sobre o debajo de otro*/
+    z-index: -1;
+}
+
+/*la posición incial del elemento div fixed no se reserva
+este elemento toma como punto relativo el extremo superior izquierdo
+se mantiene fijo en la pantalla sin importar si hay un barra de scroll*/
+
+div.fixed{
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    border: 3px solid #2268b2;
+    margin: auto; 
+}
+
+/*este elemento se usa por lo general dentro de otro elemento, es decir un elemento padre en casa de que no sea asi su posicionamiento es con respecto al document body
+no se mantiene fijo en la pantalla si se tiene un scroll*/
+
+div.relative_padre{
+    /*la posición del div que contiene a otro debe ser cualquiera diferente de static*/
+    position: relative;
+    max-width: 300px;
+    height: 100px;
+    top: 10px;
+    left: 100px;
+    border: 3px solid  cornflowerblue;
+}
+div.absolute{
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    right: 10px;
+    padding: 0px;
+    border: 3px solid #002d5d;
+    background-color: #0687a3;
+    color: white;
+    /*Si no se agrega esta propiedad este elemento se muestre sobre los demas elementos*/
+    z-index: -2;
+}
+
+div.sticky{
+    position: sticky;
+    /*necesario para que funcioné correctamente en safari*/
+    position: -webkit-sticky;
+    top: 0px;
+    bottom: 20px;
+    right: 10px;
+    border: 3px solid royalblue;
+}
+
+div.static_z_index{
+    position: static;
+    top: 10px;
+    padding: 15px; 
+    border: 3px solid blueviolet;
+    background-color:aliceblue;
+
+}

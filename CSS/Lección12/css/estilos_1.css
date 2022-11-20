@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: #b46df7;
+    /*El tercer valor es el difuminado*/
+    text-shadow: 2px 2px 5px #9d92f0;
+}
+
+div.contenedor{
+    height: 30%;
+    width: 20%;
+    padding: 15px;
+    border: 3px solid blue;
+    margin: auto;
+    text-align: center;
+    /*El cuarto parametro es para aumentar o decrementar el tamaño de la sombra*/
+    box-shadow:2px 2px 2px 2px #8484ff;
+    color: #0d6deb;
+    border-radius: 15px;
+}
+
+div.cabecero{
+    background-color:#0d6deb;
+}
+
+div.cuerpo{
+    padding-top: 2px;
+    font-size: 1em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 7px #6d58e8;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

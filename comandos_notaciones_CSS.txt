@@ -31,11 +31,99 @@ element.(name class){styles}
 
 
 ^_^ formas de declarar los colores (colores y bordes)
+
+hsl = hue(color) saturation(saturación) lightness(iluminción)
+rgb = (red green blue) (0-255)
+
+^_^ bordes
 border: solid
 border: dashed (linea discontinua)
 border: dotted (linea punteada)
 border: double (borde doble)
 border: groove (borde con surco)
+border: ridge  (borde  con cresta)
+border: inset  (borde con recuadro)
+border: outset (recuadro inverso)
+border: hidden (none)
+border: hidden (borde oculto)
+border: hidden.... (borde mixto)
 
-hsl = hue(color) saturation(saturación) lightness(iluminción)
-rgb = (red green blue) (0-255)
+podemos aplicar ul tamaño para cada lado del border
+border-width: 1px 2px 3px 4px;
+
+podemos utilizar bordes ya definidos
+border-width: thin;  medium/thick
+
+podemos darle un color diferente a cada extremo de nuestro border,
+simplemente separandolo con espacios
+border-color: blue red yellow black;
+se puede utilizar cualquier notación de color, ademas de usar transparencia
+1: color sin transparencia
+0: color totalmente transparen
+
+border-radius: 10px; redondeo de los bordes
+
+^_^ Box Model
+top, right, bottom, left
+Content, Padding, Border, Margin
+
+Border <outline> Padding
+Este no suma contenido, pues se pone sobre el margin, ademas de que se se le puede
+aplicar un color, ademas con outline se puede aplicar cualquier estilo de border
+
+Border <outline-offset> Padding
+separación entre Border y outline
+
+ box-sizing: border-box;
+ esta instrucción restringe el tamaño para que no sea mayor al que queremos
+ sin embargo no incluye al Margin
+
+ Con margin: auto; podemos centrar nuestro elemento
+
+
+
+ p.class{                   Esto nos sirve para heredar atributos de otro elemento
+    atribute=inherit;
+ }
+
+
+ ^_^ Margin collapse
+
+ los margin de dos elementos no se suman entre si
+
+ float:left;        flotar los elementos a un lado especifico
+
+
+^_^ Fondos con CSS
+
+background-image: url(dir);  esto nos sirve para agregar una imagen de fondo
+
+background-repeat: no-repeat; esto nos sirve para elegir si queremos que la imagen se repita o no
+
+background-position: elegir la posición de nuestra imagen de fondo
+
+todas estas propiedades se pueden simplificar en una sola
+background: .. .. ..;
+
+background-attachment: fixed: elegir si queremos que la imagen se mueva al igual que el scroll, hay varias
+opciones
+
+text-transform: uppercase; cambiar nuesto texto de mayuscula a minuscula o viseversa
+
+text-shadow: 0 0 2px #000000; agregar sombra a nuestro texto
+
+letter-spacing: 3px; separacion entre caracteres
+   
+word-spacing: 10px; separacion entre palabras
+
+text-decoration: none;  underline(linea inferior), line-through(texto tachado), overline(linea superior)
+
+text-indent: 20px; indentar texto
+
+line-height: 2;  separación entre lineas
+
+lección 7: fuentes..
+
+display: block; poner los  elementos en block o inline
+
+para mmodificar el tamaño y la posición de un elemento podemos meterlo dentro de un elemento div

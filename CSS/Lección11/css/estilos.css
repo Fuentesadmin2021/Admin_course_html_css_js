@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    color: #f54b42;
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #ff8585;
+    padding: 15px;
+    color: red;
+}
+/*selector descendiente*/
+div.contenedor.descendiente p{
+    background-color: #f3bdf9;
+}
+
+/*hijos directos*/
+div.contenedor.hijo > p{
+    background-color: #771177;
+}
+/*elemento adyacente*/
+div.contenedor.adyacente + p{
+    background-color: #d43232;
+}
+
+div.contenedor.hermano ~ p{
+    background-color: #9bcfff;
+}

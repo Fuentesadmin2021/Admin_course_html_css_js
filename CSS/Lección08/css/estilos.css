@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: #e6b960;
+}
+
+div{
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+}
+.icono_azul{
+    color: cornflowerblue;
+    font-size: 1em;
+}
+
+.icono_rojo{
+    color: red;
+    font-size: 1em;
+}
+
+/*alinear con el texto*/
+.done_icon{
+    vertical-align: bottom;
+}
